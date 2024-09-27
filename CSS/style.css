@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.otrossubtitulos{
+    color: brown;
+
+}
+
+.bordesredondeados{
+    border-radius: 10px;
+
+}
+.imgchica{
+    width: 800;
+    height: 500;
+}
+
+#subtitulo{
+    color: rgb(206, 162, 41);
+    background-color: rgb(114, 84, 7);
+}
+p {
+    color: rgb(180, 134, 16);
+
+}
+
+ *{
+    font-family: "Mulish", sans-serif;
+ }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
