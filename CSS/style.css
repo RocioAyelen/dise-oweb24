@@ -13,7 +13,8 @@ header {
     font-size: 33px;
     font-weight: bold;
     text-align: center;
-    border: 5px solid white
+    border: 5px solid white;
+    padding: 25px;
     
 }
 
@@ -59,8 +60,8 @@ padding: 0px;
 
 
 li {
-    color: rgb(206, 162, 41);
-    font-size: 20px;
+    color: rgb(26, 22, 14);
+    font-size: 30px;
     margin-bottom: 10px;
     }
 /* Fin Barra de Navegación*/
@@ -113,8 +114,14 @@ li {
     display: flex;
     background-color: #b39842;
     border: 5px solid white;
-    padding: 10px;
+    padding: 30px;
 
+}
+.Ref_tam{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Color y fuente de P (contenido)*/
@@ -136,32 +143,20 @@ p {
 
 }
 
-
-
-.galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    margin: 0 auto;
-    
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 450px;
+    padding: 20px;
+    grid-gap: 10px;
 }
 
-.fila {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.fila img{
-    width: 50%;
-    height: auto;
-    margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-}
 
 /* Boton ENVIAR*/
 .btn {
@@ -177,43 +172,17 @@ p {
 }
 
 .Contacto{
+    color: white;
     background-color: rgb(82, 18, 14);
     font-weight: bold;
     text-align: center;
     border: 5px solid white
-    width: 80%;
-    margin: 40px auto;
-    padding: 5px;
-}
 
-/*fieldset {
-    background-image: url(/imagenes/fondoABAJO.png);
-}*/
+}
 
 
 
 /* ADAPTAR A OTROS DISPOSITIVOS*/
-
-/* @media (min-width: 1200px){
-    .fila img{
-        width: 30%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px){
-    .fila img {
-        width: 40%;
-        
-    }
-}
-
-@media (max-width: 767px){
-    .fila img {
-        width: 100%;
-
-    }
-} */
-
 
 @media (max-width: 768px){
     /*tablets*/
@@ -222,29 +191,52 @@ p {
         color: white;
     }
 
-    .fila img {
-        width: 100%;
+    .Contacto{
+        background-color: black;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
 
 }
+.Encabezado_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
 }
 
 @media (max-width: 460px) {
     /*smartphones*/
-
-    .galeria{
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
+    header {
+        background-color: black;
+        color: white;
     }
-    
-    .fila img {
-        width: 100%;
-        
+
+    .Contacto{
+        background-color: black;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(1, 1fr);
+
+}
+.Encabezado_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 
 
 }
 
-}
+
+
+
+
 
  *{
     margin:0;
