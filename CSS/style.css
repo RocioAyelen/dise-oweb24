@@ -1,35 +1,252 @@
 body {
+    /*background-image: url(/imagenes/fondo\ -\ copia.png);*/
     font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color:#fad9cd;
+
 }
 
+/*TITULO 10mil años de historia en Patagonia*/
+header {
+    color: rgb(206, 162, 41);
+    background-color: rgb(82, 18, 14);
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white
+    
+}
+
+.Encabezado{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Los SUBTITULOS*/
 .otrossubtitulos{
     color: brown;
+    font-weight: bold;
+
+}
+/* Inicio Barra de Navegación*/
+.contenedor {
+display: flex;
+background-color:#fad9cd;
+margin: 0px;
+border: 0px white ; 
+padding: 0px;
+}
+
+.navbar-links{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.contenedor li {
+    margin-left: 2.5rem;
 
 }
 
-.bordesredondeados{
-    border-radius: 10px;
 
-}
-.imgchica{
-    width: 800;
-    height: 500;
-}
-
-#subtitulo{
+li {
     color: rgb(206, 162, 41);
-    background-color: rgb(114, 84, 7);
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+/* Fin Barra de Navegación*/
+
+
+/* 1 Subtitulo*/
+.Introduccion {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 30px;
+
 }
+
+/* 2 Subtitulo*/
+.ArteRupestre {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 30px;
+}
+
+/* 3 Subtitulo*/
+.Monumento {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 30px;
+}
+
+/* 4 Subtitulo*/
+.Peligro {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 30px;
+}
+
+/* 5 Subtitulo*/
+.Proyecto {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 30px;
+
+}
+
+/* 6 Subtitulo*/
+.Referencias {
+    display: flex;
+    background-color: #b39842;
+    border: 5px solid white;
+    padding: 10px;
+
+}
+
+/*Color y fuente de P (contenido)*/
+
 p {
-    color: rgb(180, 134, 16);
+    color: rgb(54, 21, 5);
+    font-style: normal;
 
 }
 
  *{
     font-family: "Mulish", sans-serif;
- }
+}
 
-*{
+
+/* Imagenes*/
+.bordesredondeados{
+    border-radius: 10px;
+
+}
+
+
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+
+}
+
+.fila img{
+    width: 50%;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+/* Boton ENVIAR*/
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #b39842;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.Contacto{
+    background-color: rgb(82, 18, 14);
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid white
+    width: 80%;
+    margin: 40px auto;
+    padding: 5px;
+}
+
+/*fieldset {
+    background-image: url(/imagenes/fondoABAJO.png);
+}*/
+
+
+
+/* ADAPTAR A OTROS DISPOSITIVOS*/
+
+/* @media (min-width: 1200px){
+    .fila img{
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .fila img {
+        width: 40%;
+        
+    }
+}
+
+@media (max-width: 767px){
+    .fila img {
+        width: 100%;
+
+    }
+} */
+
+
+@media (max-width: 768px){
+    /*tablets*/
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    .fila img {
+        width: 100%;
+
+}
+}
+
+@media (max-width: 460px) {
+    /*smartphones*/
+
+    .galeria{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .fila img {
+        width: 100%;
+        
+
+
+}
+
+}
+
+ *{
     margin:0;
     padding:0;
     box-sizing: border-box;
