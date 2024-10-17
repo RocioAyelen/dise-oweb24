@@ -23,12 +23,7 @@ header {
     flex-wrap: wrap;
 }
 
-/*Los SUBTITULOS*/
-.otrossubtitulos{
-    color: brown;
-    font-weight: bold;
 
-}
 /* Inicio Barra de Navegación*/
 .contenedor {
 display: flex;
@@ -66,6 +61,13 @@ li {
     }
 /* Fin Barra de Navegación*/
 
+
+/*Los SUBTITULOS*/
+.otrossubtitulos{
+    color: brown;
+    font-weight: bold;
+
+}
 
 /* 1 Subtitulo*/
 .Introduccion {
